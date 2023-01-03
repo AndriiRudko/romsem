@@ -1,0 +1,86 @@
+@import 'vars';
+@import 'global';
+
+.header {
+  border-bottom: 1px solid #111111;
+  height: 75px;
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo {
+      width: 47px;
+      height: 43px;
+      margin: 12px 0 0 28px;
+    }
+  }
+
+ &__info {
+  margin-left: 28px;
+ }
+  &__phone {
+    color: #111111;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 12px;
+  }
+  &__number {
+    max-width: 92px;
+    font-size: 12px;
+    color: #FF9846;
+    line-height: 12px;
+  }
+  &__images {
+    text-align: center;
+  }
+  &__time {
+    color: #a4ACAD;
+    max-width: 87px;
+    font-size: 12px;
+  }
+  &__working {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    padding-top: 12px;
+    margin-left: 13px;
+    .clock {
+      width: 15px;
+      height: 15px;
+
+    }
+   }
+  &__search {
+    padding-top: 25px;
+    padding-left: 18px;
+  }
+}
+
+.container {
+  padding: 15px;
+}
+
+.menu {
+  max-width: 380px;
+&__content {
+  display: grid;
+  grid-template-columns: 162px 162px;
+  // grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+&__images {
+  position: relative;
+}
+&-title {
+  position: absolute;
+  color: #fff;
+  padding: 10px 0 0 10px;
+  font-size: 18px;
+  }
+}
+
+.items {
+  width: 330px;
+  height: 140px;
+}
